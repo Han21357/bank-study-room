@@ -1,4 +1,4 @@
-const CACHE='bank-study-room-fe109ed291bf';
+const CACHE='bank-study-room-e9fb9fea4238';
 
 const CORE=['./','./index.html','./assets/loader.js','./assets/app.js','./assets/study-data.json.gz'].concat(typeof DecompressionStream==='undefined'?['./assets/study-data.json']:[]);
 self.addEventListener('install',e=>{e.waitUntil(caches.open(CACHE).then(c=>c.addAll(CORE)).then(()=>self.skipWaiting()))});
